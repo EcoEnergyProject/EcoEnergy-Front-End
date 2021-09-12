@@ -1,13 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
+ul.social-network{
+    list-style: none;
+    padding: 0;
+}
+
+ul.social-network li{
+    display: inline;
+    margin: 0;
+    padding: 5px;
+}
+
+.fa{
+    font-size: 35pt;
+    color: rgb(88, 131, 77);
+    padding: 10px;
+}
+.fa-facebook-square:hover{
+    color: #3b5998;
+}
+
+.fa-instagram:hover{
+    color: #C13584;
+}
+
+.fa-linkedin-square:hover{
+    color: #0072b1;
+}
+
 .verdinnav{
     background:
     linear-gradient( rgb(185,250,172), 0.03%, rgb(255, 255, 255, 0.9));
 }
 
+@media (min-width: 1500px) {
+    .container {
+        width: 1500px;
+    }
+}
+
+.verdinnav{
+    background:
+    linear-gradient( rgb(185,250,172), 0.03%, rgb(255, 255, 255, 0.98));
+}
+
 .teste{
     margin-left: 8px;
-    font-size: 25pt;
+    font-size: 20pt;
 }
 
 .containercomcorzinha{
@@ -102,7 +141,9 @@ h1{
 }
 
 h1 span{
-    color: #f99c80;
+    font-family: "Poppins", sans-serif;
+    color: #FFD000;
+    font-size: 3.2rem;
 }
 
 h3{
@@ -129,19 +170,19 @@ h5{
 }
 
 .cor-navbar{
-    background-color: #fff0e9;
+    background-color: white;
 }
 
 .botao-navbar{
-    background-color: #f99c80;
-    color: #fff3e6;
+    background-color: #90b848;
+    color: white;
     padding: 8px 18px;
     border-radius: 8px;
 }
 
 .botao-navbar:hover{
-    color: #fff3e6;
-    background-color: #ff7d56;
+    color: white;
+    background-color: #83BB1A;
     transition: 0.2s;
 }
 
@@ -166,6 +207,10 @@ h5{
 
 .rowsfototexto{
     margin-bottom: 5rem;
+}
+
+.rowsfototexto2{
+    padding-bottom: 3rem;
 }
 
 .espacotexto{

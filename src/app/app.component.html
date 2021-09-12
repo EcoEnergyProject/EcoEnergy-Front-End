@@ -3,5 +3,8 @@
 <app-contate-nos></app-contate-nos>
 <app-rodape></app-rodape> -->
 <!-- <app-entrar></app-entrar> -->
+<app-menu-logado *ngIf="auth.logado()"></app-menu-logado>
+<app-menu *ngIf="!auth.logado()"></app-menu>
 <router-outlet></router-outlet>
+<app-rodape></app-rodape>
 <!-- <app-cadastrar></app-cadastrar> -->

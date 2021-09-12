@@ -1,0 +1,32 @@
+ul.social-network{
+    list-style: none;
+    padding: 0;
+}
+  
+ul.social-network li{
+    display: inline;
+    margin: 0;
+    padding: 5px;
+  }
+  
+.fa{
+    font-size: 35pt;
+    color: rgb(88, 131, 77);
+    padding: 10px;
+}
+.fa-facebook-square:hover{
+    color: #3b5998;
+}
+  
+.fa-instagram:hover{
+    color: #C13584;
+  }
+  
+.fa-linkedin-square:hover{
+    color: #0072b1;
+}
+
+.verdinnav{
+    background:
+    linear-gradient( rgb(185,250,172), 0.03%, rgb(255, 255, 255, 0.9));
+}

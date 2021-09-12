@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light verdinnav">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="https://imgur.com/IT3Eyf3.png" alt="Logo EcoEnergy" width="120" class="d-inline-block align-text-center"><span class="teste">EcoEnergy</span>
+      <img src="https://imgur.com/IT3Eyf3.png" alt="Logo EcoEnergy" width="60" class="d-inline-block align-text-center mr-2"><span class="teste">EcoEnergy</span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -15,8 +15,16 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Sobre nós</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" routerLink="/produtos">Produtos</a>
+        <li>
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+              Produtos
+            </a>
+            <div class="dropdown-menu card-size" aria-labelledby="navbarDropdownMenuLink"  >
+              <a class="dropdown-item" routerLink="/cadastrarprodutos">Cadastre Produtos</a>
+              <a class="dropdown-item" routerLink="/produtos">Catálogo</a>
+            </div>
+          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Contate-nos</a>

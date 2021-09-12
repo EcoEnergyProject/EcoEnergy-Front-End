@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router'
+import { environment } from 'src/environments/environment.prod';
+import { Categoria } from '../model/Categoria';
+//import { AlertasService } from '../service/alertas.service';
+import { CategoriaService } from '../service/categoria.service';
 
 @Component({
   selector: 'app-categoria',
@@ -7,9 +12,44 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CategoriaComponent implements OnInit {
 
-  constructor() { }
+  categoria: Categoria = new Categoria
+  listaCategoria: Categoria[]
 
-  ngOnInit(): void {
+  constructor(
+    private router: Router,
+    private categoriaService: CategoriaService,
+    //private alertas: AlertasService
+  ) { }
+
+  ngOnInit() {
+
+    // if (environment.token == '') {
+    //   this.router.navigate(['/entrar'])
+    // }
+
+    // if (environment.tipo != 'adm') {
+    //   this.alertas.showAlertInfo('Você precisa ser adm para acessar!')
+    //   this.router.navigate(['/inicio'])
+    // }
+
+    this.findAllCategoria()
+  }
+
+  findAllCategoria() {
+    this.categoriaService.getAllCategoria().subscribe((resp: Categoria[]) => {
+      this.listaCategoria = resp
+    })
+  }
+
+  cadastrar() {
+    this.categoriaService.postCategoria(this.categoria).subscribe((resp: Categoria) => {
+      this.categoria = resp
+      //this.alertas.showAlertSuccess('Categoria cadastrada com sucesso!')
+      alert("Categoria cadastrada com sucesso!")
+      this.findAllCategoria()
+      this.categoria = new Categoria()
+
+    })
   }
 
 }

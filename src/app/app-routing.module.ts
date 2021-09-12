@@ -7,6 +7,10 @@ import { ProdutosComponent } from "./produtos/produtos.component"
 
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ProdutosEditComponent } from './edit/produtos-edit/produtos-edit.component';
+import { ProdutosDeleteComponent } from './delete/produtos-delete/produtos-delete.component';
+import { CadastrarprodutosComponent } from './cadastrarprodutos/cadastrarprodutos.component';
+import { CategoriaComponent } from './categoria/categoria.component';
 
 const routes: Routes = [
   {path: "", redirectTo: "inicio", pathMatch:"full"},
@@ -17,6 +21,10 @@ const routes: Routes = [
   {path: "contate-nos", component: ContateNosComponent},
   {path: "sobre-nos", component: SobreNosComponent},
   {path: "produtos", component: ProdutosComponent},
+  {path: "cadastrarprodutos", component: CadastrarprodutosComponent},
+  {path: "categoria", component: CategoriaComponent},
+  {path: "produtos-edit/:id", component: ProdutosEditComponent},
+  {path: "produtos-delete/:id", component: ProdutosDeleteComponent},
 ];
 
 @NgModule({

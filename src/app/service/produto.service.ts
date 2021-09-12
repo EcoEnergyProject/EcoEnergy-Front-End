@@ -12,7 +12,13 @@ export class ProdutoService {
   constructor(private http: HttpClient) { }
 
   token = {
-    headers: new HttpHeaders().set("Authorization", environment.token) // inclusão do token para liberação do acesso. 
+    headers: new HttpHeaders().set('Authorization', environment.token) // inclusão do token para liberação do acesso. 
+  }
+
+  refreshToken(){
+    this.token = {
+      headers: new HttpHeaders().set('Authorization', environment.token)
+    }
   }
 
   getAllProduto(): Observable<Produto[]> {

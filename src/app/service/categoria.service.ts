@@ -15,6 +15,12 @@ export class CategoriaService {
     headers: new HttpHeaders().set("Authorization", environment.token) // inclusão do token para liberação do acesso. 
   }
 
+  refreshToken(){
+    this.token = {
+      headers: new HttpHeaders().set('Authorization', environment.token)
+    }
+  }
+  
   // metodo GetAll onde retorna todas as categorias. 
   getAllCategoria(): Observable<Categoria[]>{
     return this.http.get<Categoria[]>(`${environment.apiUrl}/categoria`, this.token) // incluimos a url no enviroment. 

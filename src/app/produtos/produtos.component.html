@@ -1,80 +1,11 @@
-<div class="container-fluid">
-    <div class="row bg-secondary d-flex align-items-center">
-        <div class="col-md-6">
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-6">
-                    <h1 class="text-white">Welcome ma frend!</h1>
-                    <h5>Use esse espaço para expor suas ideias!</h5>
-                </div>
-            </div>
-            <div class="row d-flex justify-content-center mt-5">
-                <div class="col-md-6">
-                    <button class="btn btn-light mr-3" data-toggle="modal" data-target="#exampleModal">Novo johnsons</button>
-                    <a class="btn btn-outline-light" href="#postagens">Ver Postagens</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <img src="https://i.imgur.com/PiWN0y3.png" alt="Imagem de fundo" height="500px">
-        </div>
-    </div>
-</div>
-
 <div class="row d-flex justify-content-center mt-5 mb-5">
     <div class="col-md-4">
         <div class="form-group">
-            <input type="text" class="form-control" id="titulo" placeholder="Digite um nome do produto postagem para pesquisar" [(ngModel)]="produto.nomeProduto" (keyup)="findByNomeProduto()"
+            <input type="text" class="form-control" id="titulo" placeholder="Digite o nome do produto que deseja pesquisar" [(ngModel)]="produto.nomeProduto" (keyup)="findByNomeProduto()"
             />
         </div>
     </div>
 </div>     
-
-<!-- COMEÇO DO MODAL -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Novo cadastro de produto</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-
-            <div class="modal-body">
-                <div class="form-group">
-                    <label for="titulo">Nome do produto</label>
-                    <input [(ngModel)]="produto.nomeProduto" type="text" class="form-control" id="titulo" placeholder="Digite o título">
-                </div>
-
-                <div class="form-group">
-                    <label for="texto">Foto do produto</label>
-                    <textarea [(ngModel)]="produto.foto" class="form-control" name="texto" id="texto" rows="1" placeholder="Insira a URL da imagem do produto"></textarea>
-                </div>
-                
-                <div class="form-group">
-                    <label for="texto">Descricao do produto</label>
-                    <textarea [(ngModel)]="produto.descricao" class="form-control" name="texto" id="texto" rows="3" placeholder="Digite a descrição do produto  "></textarea>
-                </div>
-
-                <div class="form-group">
-                    <label for="tema">Escolha a categoria desse produto: </label>
-                    <select class="form-control" name="tema" id="tema">
-                        <option disabled selected value>Selecione uma categoria</option>
-                        <option value="solar">Solar</option>
-                        <option value="biogas">Biogás</option>
-                        <option value="eolica">Eólica</option>
-                    </select>
-                </div>
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-success" (click)="cadastrar()" data-dismiss="modal">Cadastrar</button>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- FIM DO MODAL -->
 
 <body class="containercomcorzinha">
     <section class="container verdin bordaredonda" id="categorias">
@@ -95,9 +26,9 @@
             <div class="tab-content mt-5" id="myTabContent">
             
                 <!-- TDS OS PRODUTOS -->
-                <div class="tab-pane fade show active" id="todosProdutos" role="tabpanel"          aria-labelledby="todosProdutos-tab">
+                <div class="tab-pane fade show active" id="todosProdutos" role="tabpanel" aria-labelledby="todosProdutos-tab">
                     <div class="card-columns">
-                        <div class="card text-center" *ngFor="let item of listaProdutos">
+                        <div class="card text-center" *ngFor="let nomeProduto of listaProdutos">
                 
                             <div class="card" style="width: 18rem;" *ngFor="let item of        listaProdutos">
                                 <a href="*">
@@ -171,15 +102,8 @@
                     </div>
                 </div>
                 <!-- FIM DE CATEGORIA DE ENERGIA EÓLICA -->
+                
             </div>
         </div>
-
-<div class="row mb-5">
-    
-</div>
-
-<div class="row fototexto rowsfototexto">
-    
-</div>
 </section>
 </body>

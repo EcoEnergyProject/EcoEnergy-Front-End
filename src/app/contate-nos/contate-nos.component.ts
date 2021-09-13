@@ -9,7 +9,7 @@ export class ContateNosComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }

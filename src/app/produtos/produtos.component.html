@@ -28,8 +28,7 @@
                 <!-- TDS OS PRODUTOS -->
                 <div class="tab-pane fade show active" id="todosProdutos" role="tabpanel" aria-labelledby="todosProdutos-tab">
                     <div class="card-columns">
-                        <div class="card text-center" *ngFor="let nomeProduto of listaProdutos">
-                
+                        <div class="card text-center">     
                             <div class="card" style="width: 18rem;" *ngFor="let item of        listaProdutos">
                                 <a href="*">
                                 <img src="{{item.foto}}" class="card-img-top" alt="...">
@@ -40,7 +39,6 @@
                                     <a href="#" class="btn btn-primary">Saiba mais bb</a>
                                 </div>
                             </div>   
-                        
                         </div>
                     </div>
                 </div>
@@ -49,8 +47,8 @@
                 <!-- CATEGORIA DE ENERGIA SOLAR -->
                 <div class="tab-pane fade" id="energiaSolar" role="tabpanel"         aria-labelledby="energiaSolar-tab">
                     <div class="card-columns">
-                        <div class="card text-center" *ngFor="let item of categoria.produto">
-                            <div class="card" style="width: 18rem;" *ngFor="let item of        listaProdutos">
+                        <div class="card text-center" *ngFor="let item of listaProdutos">
+                            <div class="card" style="width: 18rem;" *ngIf="item.categoria.descricaoCategoria == 'energiaSolar' " >
                                 <a href="*">
                                 <img src="{{item.foto}}" class="card-img-top" alt="...">
                                 </a>
@@ -68,8 +66,8 @@
                 <!-- CATEGORIA DE ENERGIA BIOGÁS -->
                 <div class="tab-pane fade" id="energiaBiogas" role="tabpanel"         aria-labelledby="energiaBiogas-tab">
                     <div class="card-columns">
-                        <div class="card text-center" *ngFor="let item of categoria.produto">
-                            <div class="card" style="width: 18rem;" *ngFor="let item of        listaProdutos">
+                        <div class="card text-center" *ngFor="let item of listaProdutos">
+                            <div class="card" style="width: 18rem;" *ngIf="item.categoria.descricaoCategoria == 'energiaBiogas'">
                                 <a href="*">
                                 <img src="{{item.foto}}" class="card-img-top" alt="...">
                                 </a>
@@ -87,8 +85,8 @@
                 <!-- CATEGORIA DE ENERGIA EÓLICA -->
                 <div class="tab-pane fade" id="energiaEolica" role="tabpanel"         aria-labelledby="energiaEolica-tab">
                     <div class="card-columns">
-                        <div class="card text-center" *ngFor="let item of categoria.produto">
-                            <div class="card" style="width: 18rem;" *ngFor="let item of        listaProdutos">
+                        <div class="card text-center" *ngFor="let item of listaProdutos">
+                            <div class="card" style="width: 18rem;" *ngIf="item.categoria.descricaoCategoria == 'energiaEolica'">
                                 <a href="*">
                                 <img src="{{item.foto}}" class="card-img-top" alt="...">
                                 </a>

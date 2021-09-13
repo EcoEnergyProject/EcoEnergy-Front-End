@@ -28,5 +28,5 @@ ul.social-network li{
 
 .verdinnav{
     background:
-    linear-gradient( rgb(185,250,172), 0.03%, rgb(255, 255, 255, 0.9));
+    linear-gradient( rgb(255, 255, 255) 65%, rgb(185,250,172));
 }

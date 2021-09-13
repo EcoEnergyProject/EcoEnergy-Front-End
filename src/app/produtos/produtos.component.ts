@@ -16,7 +16,10 @@ export class ProdutosComponent implements OnInit {
   listaCategorias: Categoria[]
   categoria: Categoria = new Categoria()
 
+  energiaSolar: Produto[];
+
   listaProdutos: Produto[]
+
   produto: Produto = new Produto()
 
   usuario: Usuario = new Usuario()
@@ -33,6 +36,8 @@ export class ProdutosComponent implements OnInit {
 
   ngOnInit(){
     window.scroll(0,0)
+
+    this.getAllProdutos();
   }
 
   getAllCategoria(){
@@ -56,22 +61,6 @@ export class ProdutosComponent implements OnInit {
   findByNomeProduto(){
     this.produtoService.getByNomeProduto(this.nomeProduto).subscribe((resp: Produto) =>{
       this.produto = resp
-    })
-  }
-
-  cadastrar(){
-    this.categoria.id = this.idCategoria
-    this.produto.categoria = this.categoria
-
-    this.usuario.id = this.idUsuario
-    this.produto.usuario = this.usuario
-
-    this.produtoService.postProduto(this.produto).subscribe((resp: Produto) =>{
-      this.produto = resp
-      //this.alertas.showAlertSuccess("Postagem realizada com sucesso!")
-      alert("Produto cadastrado com sucesso!")
-      this.produto = new Produto()
-      this.getAllProdutos()
     })
   }
 

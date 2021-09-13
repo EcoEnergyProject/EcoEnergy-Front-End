@@ -13,6 +13,7 @@ export class MenuLogadoComponent implements OnInit {
   constructor() { }
 
   ngOnInit(){
+    
   }
 
 }

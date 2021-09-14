@@ -16,9 +16,10 @@ import { ProdutosComponent } from './produtos/produtos.component';
 import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
 import { CategoriaComponent } from './categoria/categoria.component';
 import { ProdutosEditComponent } from './edit/produtos-edit/produtos-edit.component';
-import { ProdutosDeleteComponent } from './delete/produtos-delete/produtos-delete.component';
 import { CadastrarprodutosComponent } from './cadastrarprodutos/cadastrarprodutos.component';
 import { MenuLogadoComponent } from './menu-logado/menu-logado.component';
+import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.component';
+import { ProjetosocialComponent } from './projetosocial/projetosocial.component';
 
 @NgModule({
   declarations: [
@@ -34,9 +35,10 @@ import { MenuLogadoComponent } from './menu-logado/menu-logado.component';
     CategoriaEditComponent,
     CategoriaComponent,
     ProdutosEditComponent,
-    ProdutosDeleteComponent,
     CadastrarprodutosComponent,
     MenuLogadoComponent,
+    ProdutoDeleteComponent,
+    ProjetosocialComponent,
   ],
   imports: [
     BrowserModule,

@@ -8,9 +8,10 @@ import { ProdutosComponent } from "./produtos/produtos.component"
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ProdutosEditComponent } from './edit/produtos-edit/produtos-edit.component';
-import { ProdutosDeleteComponent } from './delete/produtos-delete/produtos-delete.component';
+import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.component';
 import { CadastrarprodutosComponent } from './cadastrarprodutos/cadastrarprodutos.component';
 import { CategoriaComponent } from './categoria/categoria.component';
+import { ProjetosocialComponent } from './projetosocial/projetosocial.component';
 
 const routes: Routes = [
   {path: "", redirectTo: "inicio", pathMatch:"full"},
@@ -23,8 +24,10 @@ const routes: Routes = [
   {path: "produtos", component: ProdutosComponent},
   {path: "cadastrarprodutos", component: CadastrarprodutosComponent},
   {path: "categoria", component: CategoriaComponent},
-  {path: "produtos-edit/:id", component: ProdutosEditComponent},
-  {path: "produtos-delete/:id", component: ProdutosDeleteComponent},
+  {path: "produto-edit/:id", component: ProdutosEditComponent},
+  {path: "produto-delete/:id", component: ProdutoDeleteComponent},
+  {path: "projeto-social", component: ProjetosocialComponent}
+
 ];
 
 @NgModule({

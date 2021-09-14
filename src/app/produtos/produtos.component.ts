@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { environment } from 'src/environments/environment.prod';
 import { Categoria } from '../model/Categoria';
 import { Produto } from '../model/Produto';
 import { Usuario } from '../model/Usuario';
+import { AuthService } from '../service/auth.service';
+
 import { CategoriaService } from '../service/categoria.service';
 import { ProdutoService } from '../service/produto.service';
 
@@ -16,27 +19,20 @@ export class ProdutosComponent implements OnInit {
   listaCategorias: Categoria[]
   categoria: Categoria = new Categoria()
 
-  energiaSolar: Produto[];
-
   listaProdutos: Produto[]
 
   produto: Produto = new Produto()
 
-  usuario: Usuario = new Usuario()
-  
-  idUsuario: number;
-  idCategoria: number;
   nomeProduto: string;
 
   constructor(
-    private router: Router,
     private categoriaService: CategoriaService,
+    public auth: AuthService,
     private produtoService: ProdutoService,
   ) { }
 
   ngOnInit(){
     window.scroll(0,0)
-
     this.getAllProdutos();
   }
 
@@ -46,8 +42,8 @@ export class ProdutosComponent implements OnInit {
     })
   }
 
-  getByIdCategoria(){
-    this.categoriaService.getByIdCategoria(this.idCategoria).subscribe((resp: Categoria) =>{
+  getByIdCategoria(id: number){
+    this.categoriaService.getByIdCategoria(id).subscribe((resp: Categoria) =>{
       this.categoria = resp;
     })
   }

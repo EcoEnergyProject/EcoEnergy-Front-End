@@ -26,7 +26,7 @@ export class ProdutoService {
   }
 
   getByIdProduto(id: number): Observable<Produto>{
-    return this.http.get<Produto>(`${environment.apiUrl}/produto`, this.token)
+    return this.http.get<Produto>(`${environment.apiUrl}/produto/${id}`, this.token)
   }
 
   getByCaracteristicaProduto(caracteristica: string): Observable<Produto>{
@@ -44,6 +44,7 @@ export class ProdutoService {
   putProduto(produto: Produto): Observable<Produto>{
     return this.http.put<Produto>(`${environment.apiUrl}/produto`, produto, this.token)
   }
+  
   deleteProduto(id: number) {
     return this.http.delete(`${environment.apiUrl}/produto/${id}`, this.token)
   }

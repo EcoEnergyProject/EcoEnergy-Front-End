@@ -17,31 +17,28 @@
                     </div>
 
                     <div class="form-group mt-5">
-                        <label for="nome">Nome do produto</label>
+                        <label for="nomeProduto">Nome do produto</label>
                         <input class="form-control" type="text" name="nomeProduto" id="nomeProduto" placeholder="Digite o nome do produto" [(ngModel)]="produto.nomeProduto" />
                     </div>
+
                     <div class="form-group d-flex">
-                        <div class=" ">
-                            <label for="nome">Selecione uma categoria ou </label><a href="#" data-toggle="modal" data-target="#exampleModal"> cadastre uma nova</a>
+                        <div>
+                            <label for="categoria">Selecione uma categoria ou </label><a href="#" data-toggle="modal" data-target="#exampleModal"> cadastre uma nova</a>
                             <select class="form-control custom-select" name="categoria" id="categoria" placeholder="Selecione a categoria" [(ngModel)]='idCategoria' (change)='findByIdCategoria()'>
                             <option selected>Selecione a Categoria</option>
                             <option *ngFor='let item of listaCategoria' value="{{item.id}}">{{item.tipo}}</option>
                             </select>
                         </div>
-                        <!-- <div class="w-50">
-                            <span class="align-items-center"> ou </span>
-                            <button type="button" class="btn btn-primary cadastrocategoria mt-4" data-toggle="modal" data-target="#exampleModal">Cadastre uma categoria</button> 
-                        </div> -->
                     </div>
 
                     <div class="form-group d-flex">
                         <div class="w-50 mr-5">
-                            <label for="CEP">Descrição do seu Produto</label>
+                            <label for="descricao">Descrição do seu Produto</label>
                             <input class="form-control" type="text" name="descricao" id="descricao" placeholder="Digite sua descrição" [(ngModel)]="produto.descricao" />
                         </div>
 
                         <div class="w-50">
-                            <label for="numero">Insira a URL da foto de seu produto</label>
+                            <label for="foto">Insira a URL da foto de seu produto</label>
                             <input class="form-control" type="text" name="foto" id="foto" placeholder="Digite seu número residencial" [(ngModel)]="produto.foto" />
                         </div>
                     </div>

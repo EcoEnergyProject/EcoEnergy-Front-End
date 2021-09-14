@@ -8,6 +8,10 @@
     background-size: cover;
 }
 
+#imgLogo{
+  background-repeat: no-repeat;
+}
+
 
 .bgform{
     padding: 30px;

@@ -100,6 +100,19 @@
 
 .tamanhoimagem {
     size: contain;
-    height: 400px;
+    height: 450px;
     width: 300px;
+}
+
+.tecnologias {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.tectitulo {
+    font-family:'Gagalin', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px 0;
 }

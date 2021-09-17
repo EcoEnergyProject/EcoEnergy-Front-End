@@ -9,7 +9,7 @@ export class ProjetosocialComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(){
   }
 
 }

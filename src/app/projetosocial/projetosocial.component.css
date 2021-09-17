@@ -7,8 +7,14 @@
     border-radius: 10px;
 }
 
+h2{
+    font-family:'Gagalin', sans-serif
+}
+p{
+    font-family: "Righteous", sans-serif;
+}
 
-.sobreno h2 {
+/* .sobreno h2 {
     font-family:'Gagalin', sans-serif;
     font-size: 2rem;
     text-align: center;
@@ -60,46 +66,46 @@
     font-size: 1.2rem;
     text-align: center;
     padding: 20px 20px;
-}
+} */
 
-.valores h3 {
+/* .valores h3 {
     font-family:'Gagalin', sans-serif;
     font-size: 2rem;
     text-align: center;
     padding: 40px 0;
-}
+} */
 
-.valores p {
+/* .valores p {
     font-family: "Righteous", sans-serif;
     font-size: 1.2rem;
     text-align: center;
     padding: 20px 20px;
-}
+} */
 
-.projetos {
+/* .projetos {
     font-family:'Gagalin', sans-serif;
     font-size: 2rem;
     text-align: center;
     padding: 30px 0;
-}
+} */
 
-.textotitulo {
+/* .textotitulo {
     font-family:'Gagalin', sans-serif;
     font-size: 2rem;
     text-align: center;
     padding: 40px 0;
     text-shadow: black 0.1em 0.1em 0.2em
-}
+} */
 
-.textopara {
+/* .textopara {
     font-family: "Righteous", sans-serif;
     font-size: 1.2rem;
     text-align: center;
     text-shadow: black 0.1em 0.1em 0.2em
-}
+} */
 
-.tamanhoimagem {
+/* .tamanhoimagem {
     size: contain;
     height: 400px;
     width: 300px;
-}
+} */

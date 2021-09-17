@@ -8,7 +8,7 @@ import { ProdutoService } from 'src/app/service/produto.service';
 import { environment } from 'src/environments/environment.prod';
 
 @Component({
-  selector: 'app-produtos-edit',
+  selector: 'app-produto-edit',
   templateUrl: './produtos-edit.component.html',
   styleUrls: ['./produtos-edit.component.css']
 })

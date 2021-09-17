@@ -60,4 +60,10 @@ export class ProdutosComponent implements OnInit {
     })
   }
 
+  getProdutoById(id:number){
+    this.produtoService.getByIdProduto(id).subscribe((resp: Produto) =>{
+      this.produto = resp;
+    })
+  }
+
 }

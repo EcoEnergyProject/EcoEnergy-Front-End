@@ -8,6 +8,19 @@
     width: 100%;
 }
 
+.espacodositem{
+    display: flex;
+    justify-content: space-around;
+}
+
+.branco{
+    background-color: white;
+}
+
+.bordaredonda{
+    border-radius: 25px;
+}
+
 .verdin{
     background-color: #b9faac;
 }

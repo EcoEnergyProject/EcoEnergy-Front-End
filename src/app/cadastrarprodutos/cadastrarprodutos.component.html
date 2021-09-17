@@ -23,10 +23,10 @@
 
                     <div class="form-group d-flex">
                         <div>
-                            <label for="categoria">Selecione uma categoria ou </label><a href="#" data-toggle="modal" data-target="#exampleModal"> cadastre uma nova</a>
+                            <label for="categoria">Selecione uma categoria ou</label><a href="#" data-toggle="modal" data-target="#cadastroModal"> cadastre uma nova</a>    
                             <select class="form-control custom-select" name="categoria" id="categoria" placeholder="Selecione a categoria" [(ngModel)]='idCategoria' (change)='findByIdCategoria()'>
                             <option selected>Selecione a Categoria</option>
-                            <option *ngFor='let item of listaCategoria' value="{{item.id}}">{{item.tipo}}</option>
+                            <option *ngFor='let item of listaCategoria' value="{{item.id}}">{{item.palavraChave}}</option>
                             </select>
                         </div>
                     </div>
@@ -69,30 +69,31 @@
 </div>
 
 <!-- INICIO DO MODAL -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="cadastroModal" tabindex="-1" role="dialog" aria-labelledby="cadastroModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Cadastro de categoria</h5>
+                <h5 class="modal-title" id="cadastroModalLabel">Cadastro de categoria</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
                 </button>
             </div>
-        <div class="modal-body">
-            <div class="form-group">
-
-                <label for="palavraChave">Insira o nome da categoria: </label>
-                <input [(ngModel)]='categoria.palavraChave' type="text" class="form-control mb-3" id="palavraChave" placeholder="Digite um nome da categoria">
-
-                <label for="descricao">Descrição da categoria: </label>
-                <input [(ngModel)]='categoria.descricaoCategoria' type="text" class="form-control mb-3" id="descricao" placeholder="Digite a descrição da categoria">
-
-                <label for="tipo">Tipo da categoria: </label>
-                <input [(ngModel)]='categoria.tipo' type="text" class="form-control mb-3" id="tipo" placeholder="Digite o tipo da categoria">
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                <button type="button" class="btn btn-primary" (click)="cadastrarcategoria()" data-dismiss="modal">Salvar</button>
+            <div class="modal-body">
+                <div class="form-group">
+                
+                    <label for="palavraChave">Insira o nome da categoria: </label>
+                    <input [(ngModel)]='categoria.palavraChave' type="text" class="form-control mb-3" id="palavraChave" placeholder="Digite um nome para a categoria">
+                
+                    <label for="descricao">Descrição da categoria: </label>
+                    <input [(ngModel)]='categoria.descricaoCategoria' type="text"      class="form-control mb-3" id="descricao" placeholder="Digite a descrição da    categoria">
+                
+                    <label for="tipo">Tipo da categoria: </label>
+                    <input [(ngModel)]='categoria.tipo' type="text" class="form-control mb-3" id="tipo" placeholder="Digite o tipo da categoria">
+                
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary" (click)="cadastrarcategoria()" data-dismiss="modal">Salvar</button>
+                </div>
             </div>
         </div>
     </div>

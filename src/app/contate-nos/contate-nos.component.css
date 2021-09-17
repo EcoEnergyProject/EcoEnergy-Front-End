@@ -1,10 +1,6 @@
 @import url('http://fonts.cdnfonts.com/css/gagalin');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
-
-h1{
-    font-family: 'Gagalin', sans-serif;
-    padding: 20px;
-}
 
 h4{
     font-family: 'Gagalin', sans-serif;
@@ -42,4 +38,19 @@ ul.social-network li{
 }
 .fa-linkedin-square{
     color:#0072b1;
+}
+
+.bgfundo {
+    background-color:#B5D676;
+    border-radius: 10px;
+    font-family:'Gagalin', sans-serif;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.pessoinhas {
+    padding: 30px 50px;
+    font-family: "Righteous", sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
 }

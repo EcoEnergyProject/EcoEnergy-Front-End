@@ -106,20 +106,6 @@ ul li{
     width: 100%; /* Full width */
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
-/* 
-#navbar a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    text-decoration: none;
-}
-
-#navbar a:hover {
-    background-color: #ddd;
-    color: black;
-} */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
 
@@ -202,7 +188,7 @@ h5{
 }
 
 .fototexto{
-    margin-top: 8rem;
+    margin-top: 3rem;
 }
 
 .rowsfototexto{

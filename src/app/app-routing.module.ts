@@ -12,6 +12,7 @@ import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.c
 import { CadastrarprodutosComponent } from './cadastrarprodutos/cadastrarprodutos.component';
 import { CategoriaComponent } from './categoria/categoria.component';
 import { ProjetosocialComponent } from './projetosocial/projetosocial.component';
+import { SolicitacaoOrcamentoComponent } from './solicitacao-orcamento/solicitacao-orcamento.component';
 
 const routes: Routes = [
   {path: "", redirectTo: "inicio", pathMatch:"full"},
@@ -26,7 +27,8 @@ const routes: Routes = [
   {path: "categoria", component: CategoriaComponent},
   {path: "produto-edit/:id", component: ProdutosEditComponent},
   {path: "produto-delete/:id", component: ProdutoDeleteComponent},
-  {path: "projeto-social", component: ProjetosocialComponent}
+  {path: "projeto-social", component: ProjetosocialComponent},
+  {path: "solicitacao-orcamento", component: SolicitacaoOrcamentoComponent}
 
 ];
 

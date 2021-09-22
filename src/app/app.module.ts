@@ -20,6 +20,7 @@ import { CadastrarprodutosComponent } from './cadastrarprodutos/cadastrarproduto
 import { MenuLogadoComponent } from './menu-logado/menu-logado.component';
 import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.component';
 import { ProjetosocialComponent } from './projetosocial/projetosocial.component';
+import { SolicitacaoOrcamentoComponent } from './solicitacao-orcamento/solicitacao-orcamento.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { ProjetosocialComponent } from './projetosocial/projetosocial.component'
     MenuLogadoComponent,
     ProdutoDeleteComponent,
     ProjetosocialComponent,
+    SolicitacaoOrcamentoComponent,
   ],
   imports: [
     BrowserModule,

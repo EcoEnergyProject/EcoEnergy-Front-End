@@ -14,6 +14,11 @@ ul.social-network li{
     color: rgb(88, 131, 77);
     padding: 10px;
 }
+
+.fa-github-square:hover{
+    color: black;
+
+}
 .fa-facebook-square:hover{
     color: #3b5998;
 }

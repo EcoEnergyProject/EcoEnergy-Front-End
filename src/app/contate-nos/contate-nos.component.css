@@ -7,7 +7,9 @@ h4{
     padding: 10px;
 }
 
-.fa-github:hover {
+
+
+.fa-github-square:hover {
     color: #a4d42b;
     }
 
@@ -31,7 +33,7 @@ ul.social-network li{
 
     
 }
-.fa-github{
+.fa-github-square{
     color: black;
     
     

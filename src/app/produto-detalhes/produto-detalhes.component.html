@@ -1,0 +1,52 @@
+<div class="container-fluid d-flex justify-content-center mt-5">
+  
+    <div class="col-md-7">
+      <div class="align-items-center justify-content-center text-center">
+        <img src="{{produto.foto}}" class="mb-">
+        <h4 class="mb-5">{{produto.nomeProduto}}</h4>
+      </div>
+    </div>
+ 
+    <div class="col-md-5">
+      <div class="card" style="width: 28rem;">
+        <div class="card-body">
+          <h4 class="card-title">{{produto.nomeProduto}}</h4>
+          <h5 step="any">R{{produto.valor | currency}}</h5>
+          <p class="card-text">{{produto.descricao}}</p>
+          <button type="button" href="#" class="btn botao-navbar btn-block mb-2">Solicite esse produto</button>
+          ou <a class="linkclick" onClick="document.getElementById('detalhe').scrollIntoView();"> veja suas especificações</a>
+          <hr>
+
+          <h6>Contate-nos caso em caso de dúvidas</h6>
+          <p>EcoEnergy LTDA.</p>
+          <p>E-mail: ecoenergy.generation@gmail.com</p>
+          <p>Localização: Av. Br. Faria Lima, 10000</p>
+          
+          <hr>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <div class="container distancia">
+    <table class="table" id="detalhe">
+      <thead>
+        <th scope="col" colspan="5">
+          <tr>Especificações do produto:</tr>
+        </th>
+      </thead>
+  
+      <tbody>
+        <tr>
+          <th>Características</th>
+          <td>{{produto.caracteristica}}</td>
+        </tr> 
+        <tr>
+          <th>Categoria</th>
+          <td>{{produto.categoria.palavraChave}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

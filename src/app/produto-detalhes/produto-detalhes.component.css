@@ -1,0 +1,20 @@
+.linkclick{
+    cursor:pointer;
+}
+
+.botao-navbar{
+    background-color: #90b848;
+    color: white;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.botao-navbar:hover{
+    color: white;
+    background-color: #83BB1A;
+    transition: 0.2s;
+}
+
+.distancia{
+    margin-top: 9rem;
+}

@@ -115,6 +115,7 @@ h4{
 .botao-navbar{
     background-color: #90b848;
     color: white;
+    font-weight:600;
     padding: 8px 18px;
     border-radius: 8px;
 }

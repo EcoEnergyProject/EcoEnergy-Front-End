@@ -18,3 +18,7 @@
 .distancia{
     margin-top: 9rem;
 }
+
+.b{
+    justify-content: space-between;
+}

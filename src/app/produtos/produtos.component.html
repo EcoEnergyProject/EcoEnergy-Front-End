@@ -1,13 +1,13 @@
 <body class="containercomcorzinha pt-4 pb-3">
 
-    <div class="row d-flex justify-content-center">
+    <!-- <div class="row d-flex justify-content-center">
         <div class="col-md-4">
             <div class="form-group">
                 <input type="text" class="form-control" id="titulo" placeholder="Digite o nome do produto que deseja pesquisar" [(ngModel)]="produto.nomeProduto" (keyup)="findByNomeProduto()"
                 />
             </div>
         </div>
-    </div>     
+    </div>      -->
 
     <div class="container branco bordaredonda" id="categorias">
         <nav class="mt-3">
@@ -28,7 +28,7 @@
             <!-- TDS OS PRODUTOS -->
             <div class="tab-pane fade show active" id="todosProdutos" role="tabpanel" aria-labelledby="todosProdutos-tab">
                 <div class="card-columns">
-                    <div class="card text-center" style="width: 18rem;" *ngFor="let item of listaProdutos">              
+                    <div class="card text-center" style="width: 90%;" *ngFor="let item of listaProdutos">              
                         <div class="card-body">   
                             <a href="*">
                                 <img src="{{item.foto}}" class="card-img-top" alt="Imagem de produto">

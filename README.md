@@ -1,7 +1,8 @@
 # EcoEnergy
 
-<br>🌱 Projeto integrador grupo 6 ⚡ Generation Brasil.
+<br>🌱 Projeto integrador grupo 6 ⚡ Generation Brasil. 
 <br>Nesse repositório você encontra o Front-End do projeto EcoEnergy, utilizando o framework Angular com Bootstrap. 
+
 
 _________________________________________________________________________________________________________________________________
 

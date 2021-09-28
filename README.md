@@ -1,5 +1,10 @@
 # EcoEnergy
 
+<br>🌱 Projeto integrador grupo 6 ⚡ Generation Brasil.
+<br>Nesse repositório você encontra o Front-End do projeto EcoEnergy, utilizando o framework Angular com Bootstrap. 
+
+_________________________________________________________________________________________________________________________________
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.2.
 
 ## Development server
